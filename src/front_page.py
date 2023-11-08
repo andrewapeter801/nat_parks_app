@@ -1,13 +1,24 @@
 import streamlit as st
+import base64
+
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://unsplash.com/photos/low-angle-photography-of-green-trees-during-daytime-UDTQ0737wu0")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 st.title("Bonfire-129 Capstone Project")
-st.text('My application utilizes Pandas, Streamlit, SkLean, SpaCy, MongoDB, and Python to create a National Parks query')
+st.text("Created by: Andrew Peterson")
+st.markdown("---")
+st.text('''My application utilizes Pandas, Streamlit, MongoDB, Tableau, and Python to create 
+        an info deck from the National Parks Service API!''')
 
-st.subheader('Summary')
-st.text('Summary Page, explaining all the inner workings of my application and the "why" behind decisions we made!')
-
-st.subheader('Query')
-st.text('Query: Allows a user to enter a park and queries the database in MongoDb for all information.')
-
-st.subheader('Vis')
-st.text('Vis: Ability to create a visualization in Plotly')
